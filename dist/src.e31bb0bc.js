@@ -27979,7 +27979,7 @@ function App() {
   }, 0);
   document.title = `${hazards} potential HAZARDS ${hazards > 0 ? '😱' : '👍'}`;
   const results = data.result.near_earth_objects[day];
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, (0, _format.default)((0, _addDays.default)(new Date(), 1), 'EEEE d-MMM'), " there will be", ' ', /*#__PURE__*/_react.default.createElement("strong", null, results.length), " near misses"), /*#__PURE__*/_react.default.createElement("hr", null), results.sort(a => a.is_potentially_hazardous_asteroid ? -1 : 1).map(data => /*#__PURE__*/_react.default.createElement(_Orbital.default, _extends({
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, (0, _format.default)((0, _addDays.default)(new Date(), 1), 'EEEE d-MMM'), " there will be", ' ', /*#__PURE__*/_react.default.createElement("strong", null, results.length), " near misses!"), /*#__PURE__*/_react.default.createElement("hr", null), results.sort(a => a.is_potentially_hazardous_asteroid ? -1 : 1).map(data => /*#__PURE__*/_react.default.createElement(_Orbital.default, _extends({
     key: data.id
   }, data))));
 }
@@ -28021,7 +28021,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51732" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51991" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
